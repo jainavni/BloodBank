@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:padding="30dp"
+    android:background="#ffeddd">
+    <TextView
+        android:text="Contact Donor"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:textColor="#000"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:layout_margin="10dp"
+        android:id="@+id/txt"
+        android:textStyle="bold|italic"/>
+
+    <ImageButton
+        android:id="@+id/call_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/call_button"
+        android:drawablePadding="10dp"
+        android:padding="15dp"
+        android:src="@drawable/baseline_call_white_36"
+        android:text="Call"
+        android:textAllCaps="false"
+        android:textColor="#fff" />
+
+    <ImageButton
+        android:id="@+id/message_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/msg_button"
+        android:drawablePadding="10dp"
+        android:padding="15dp"
+        android:src="@drawable/baseline_message_white_36"
+        android:text="Message"
+        android:textAllCaps="false"
+        android:textColor="#fff" />
+</RelativeLayout>
+
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<LinearLayout-->
+    <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:background="#faf0e7"-->
+    <!--android:orientation="vertical">-->
+
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Contact Donor "-->
+        <!--android:fontFamily="@font/abril_fatface"-->
+        <!--android:layout_marginRight="10dp"-->
+        <!--android:layout_marginLeft="10dp"-->
+        <!--android:layout_marginBottom="20dp"-->
+        <!--android:layout_marginTop="30dp"-->
+        <!--android:id="@+id/text"-->
+        <!--android:singleLine="true"-->
+        <!--android:textColor="#c16513"-->
+        <!--android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:textAlignment="center"-->
+        <!--/>-->
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_margin="10dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:weightSum="2">-->
+
+        <!--<ImageButton-->
+            <!--android:id="@+id/call_btn"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="80dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_margin="15dp"-->
+            <!--android:background="@drawable/call_button"-->
+            <!--android:src="@drawable/baseline_call_white_48"-->
+            <!--/>-->
+        <!--<ImageButton-->
+            <!--android:id="@+id/message_btn"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="80dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_margin="15dp"-->
+            <!--android:background="@drawable/msg_button"-->
+            <!--android:src="@drawable/baseline_message_white_48"-->
+            <!--/>-->
+    <!--</LinearLayout>-->
+    <!--&lt;!&ndash;<Button&ndash;&gt;-->
+    <!--&lt;!&ndash;android:id="@+id/call_btn"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_alignParentStart="true"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_alignParentLeft="true"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_alignParentTop="true"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_marginStart="20dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_marginTop="148dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_marginLeft="20dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:background="@color/colorPrimaryDark"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:text="Call"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:drawablePadding="10dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:drawableLeft="@drawable/ic_call_black"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:textAllCaps="false"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:textColor="#fff" />&ndash;&gt;-->
+
+    <!--&lt;!&ndash;<Button&ndash;&gt;-->
+    <!--&lt;!&ndash;android:id="@+id/message_btn"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_alignParentEnd="true"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_alignParentRight="true"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_alignTop="@+id/call_btn"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_marginEnd="26dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_alignParentTop="true"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_marginTop="148dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_marginLeft="150dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_marginRight="26dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:drawablePadding="10dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:drawableLeft="@drawable/ic_message_black"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:background="@color/colorPrimary"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:text="Message"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:textAllCaps="false"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:textColor="#fff" />&ndash;&gt;-->
+<!--</LinearLayout>-->

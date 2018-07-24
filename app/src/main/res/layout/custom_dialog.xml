@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_margin="8dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffeddd"
+    android:weightSum="2">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:weightSum="4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <TextView
+            android:textSize="30dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:textColor="#000"
+            android:layout_height="wrap_content"
+            android:text="Verify Phone Number"
+            android:fontFamily="@font/abril_fatface"/>
+
+        <TextView
+            android:textSize="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/abril_fatface"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="#000"
+            android:text="Please Enter OTP sent to"/>
+
+        <TextView
+            android:textSize="24dp"
+            android:id="@+id/mob"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="10sp"
+            android:fontFamily="@font/abril_fatface"
+            android:layout_width="match_parent"
+            android:textColor="#000"
+            android:layout_height="wrap_content"
+            android:text="Your number"/>
+
+    </LinearLayout>
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/field_verification_code"
+        android:layout_width="match_parent"
+        android:layout_margin="15dp"
+        app:met_floatingLabel="highlight"
+        android:layout_height="wrap_content"
+        app:met_textColorHint="#000"
+        android:gravity="center"
+        android:fontFamily="@font/abril_fatface"
+        android:layout_gravity="center_horizontal"
+        android:hint="@string/hint_verification_code"
+        android:inputType="number"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_margin="25dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:id="@+id/button_verify_phone"
+            android:text="Confirm"
+            android:textColor="#fff"
+            android:padding="3dp"
+            android:background="@drawable/button1"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_margin="20dp"
+            android:padding="3dp"
+            android:textColor="#fff"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:id="@+id/button_resend_otp"
+            android:text="Resend Otp"
+            android:background="@drawable/button1"/>
+    </LinearLayout>
+
+</LinearLayout>
